@@ -1,0 +1,109 @@
+$bp-tablet: 768px;
+$bp-desktop: 1440px;
+$color-accent-mint: #D9FFF5;
+
+.divider-footer {
+    width: calc(100% + 32px);
+    height: 1px;
+    background-color: $color-accent-mint;
+    margin-top: 24px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.footer-section {
+    padding: 24px 16px;
+
+    &__text {
+        width: 288px;
+        font-family: 'TTLakes', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+
+        @media (min-width: $bp-tablet) {
+            width: 421px;
+        }
+    }
+
+    &__text2 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: fit-content;
+        font-family: 'TTLakes', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        margin-top: 16px;
+
+        img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    &__text3 {
+        text-align: center;
+        opacity: 0.72;
+        font-family: 'TTLakes', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+
+        @media (min-width: $bp-tablet) {
+            text-align: left;
+        }
+    }
+
+    &__text4 {
+        text-align: center;
+        opacity: 0.72;
+        font-family: 'TTLakes', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @media (min-width: $bp-tablet) {
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    &__text5 {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        opacity: 0.72;
+        font-family: 'TTLakes', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+
+        @media (min-width: $bp-tablet) {
+            width: 260px;
+            text-align: right;
+            margin: 0;
+        }
+    }
+}
+
+.footer2 {
+    margin-top: 40px;
+
+    @media (min-width: $bp-tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 54px;
+    }
+}

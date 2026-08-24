@@ -1,0 +1,135 @@
+$bp-tablet: 768px;
+$bp-desktop: 1440px;
+$color-accent-mint: #D9FFF5;
+
+.price-section {
+    padding: 24px 16px;
+
+    &__title {
+        text-transform: uppercase;
+        color: #7E7E82;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        font-family: 'TTLakes', sans-serif;
+        font-weight: 400;
+        margin-bottom: 16px;
+        margin-top: 10px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        display: none;
+    }
+}
+
+.divider-content3 {
+    width: 100%;
+    height: 1px;
+    background-color: $color-accent-mint;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.price-slider__list {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
+
+    &__item {
+        position: relative;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__card {
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 6px;
+        padding: 16px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        flex-shrink: 0;
+    }
+
+    .price-section__item {
+        width: 260px;
+        height: 230px;
+        color: #1b1c21;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: 'TTLakes', sans-serif;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        font-weight: 400;
+
+        .price-slider__text {
+            margin-top: 15px;
+            margin-left: 20px;
+            width: 228px;
+            margin-bottom: 5px;
+            color: #7E7E82;
+        }
+
+        .price-slider__text1 {
+            margin-left: 20px;
+        }
+
+        .price-slider__text2 {
+            margin-top: 15px;
+            color: #7E7E82;
+            margin-left: 20px;
+        }
+
+        .price-slider__text3 {
+            margin-left: 20px;
+        }
+
+        .price-slider__text4 {
+            margin-top: 15px;
+            color: #7E7E82;
+            margin-left: 20px;
+        }
+
+        .price-slider__text5 {
+            margin-left: 20px;
+        }
+
+        .price-slider__btn {
+            margin-top: auto;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;
+        }
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #B5B5B5 !important;
+        opacity: 1 !important;
+    }
+
+    .swiper-pagination-bullet {
+        background: #DDDDDD;
+        opacity: 1;
+    }
+}
